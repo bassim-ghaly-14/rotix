@@ -1,81 +1,658 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Basic Meta -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
 
-    <!-- Title -->
-    <title>ROTIX - Ultimate Gaming Experience</title>
-
-    <!-- SEO Meta -->
-    <meta
-      name="description"
-      content="ROTIX is an exciting next-generation game delivering immersive gameplay, stunning visuals, competitive challenges, and endless entertainment. Join the adventure and experience gaming like never before."
-    />
+    <meta charset="UTF-8">
 
     <meta
-      name="keywords"
-      content="ROTIX, Rotix Game, Online Game, Mobile Game, Multiplayer, Gaming Platform, Competitive Gaming, Adventure Game, Strategy Game"
-    />
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+    >
 
-    <meta name="author" content="ROTIX Team" />
-    <meta name="robots" content="index, follow" />
-    <meta name="theme-color" content="#0A1F6D" />
+    <title>ROTIX — Cyber-Fluid Pipeline Puzzle Game</title>
 
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://rotixgame.com" />
+    <!-- =========================
+         SEO META DATA
+    ========================== -->
 
-    <!-- Favicon -->
+    <meta
+        name="description"
+        content="Play ROTIX, a fast-paced cyber-fluid pipeline puzzle game where you rotate energy nodes, synchronize dual streams, stabilize complex matrices, and master 30 challenging levels."
+    >
+
+    <meta
+        name="keywords"
+        content="ROTIX, Rotix game, pipeline puzzle, puzzle game, cyber puzzle game, fluid pipeline game, logic game, strategy puzzle, brain game, online puzzle game, mobile puzzle game, HTML5 game"
+    >
+
+    <meta name="author" content="ROTIX">
+
+    <meta
+        name="robots"
+        content="index, follow"
+    >
+
+    <meta
+        name="googlebot"
+        content="index, follow"
+    >
+
+    <meta
+        name="theme-color"
+        content="#000000"
+    >
+
+    <!-- =========================
+         CANONICAL
+    ========================== -->
+
     <link
-      rel="icon"
-      type="image/png"
-      href="https://res.cloudinary.com/paihc5qx/image/upload/v1786991414/logo_ba6vg2.png"
-    />
+        rel="canonical"
+        href="https://rotixgame.com"
+    >
+
+    <!-- =========================
+         FAVICON
+    ========================== -->
 
     <link
-      rel="apple-touch-icon"
-      href="https://res.cloudinary.com/paihc5qx/image/upload/v1786991414/logo_ba6vg2.png"
-    />
+        rel="icon"
+        type="image/png"
+        href="https://res.cloudinary.com/paihc5qx/image/upload/v1786991414/logo_ba6vg2.png"
+    >
 
-    <!-- Open Graph (Facebook, LinkedIn, Discord) -->
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="ROTIX - Ultimate Gaming Experience" />
+    <link
+        rel="apple-touch-icon"
+        href="https://res.cloudinary.com/paihc5qx/image/upload/v1786991414/logo_ba6vg2.png"
+    >
+
+    <!-- =========================
+         MOBILE / PWA
+    ========================== -->
+
     <meta
-      property="og:description"
-      content="Dive into the world of ROTIX and enjoy a premium gaming experience with epic challenges, immersive gameplay, and endless excitement."
-    />
+        name="apple-mobile-web-app-capable"
+        content="yes"
+    >
+
     <meta
-      property="og:image"
-      content="https://res.cloudinary.com/paihc5qx/image/upload/v1786991414/logo_ba6vg2.png"
-    />
-    <meta property="og:url" content="https://rotixgame.com" />
-    <meta property="og:site_name" content="ROTIX" />
+        name="apple-mobile-web-app-status-bar-style"
+        content="black-translucent"
+    >
 
-    <!-- Twitter / X -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="ROTIX - Ultimate Gaming Experience" />
     <meta
-      name="twitter:description"
-      content="Experience next-level gaming with ROTIX. Stunning visuals, exciting gameplay, and endless adventures await."
-    />
+        name="apple-mobile-web-app-title"
+        content="ROTIX"
+    >
+
     <meta
-      name="twitter:image"
-      content="https://res.cloudinary.com/paihc5qx/image/upload/v1786991414/logo_ba6vg2.png"
-    />
+        name="mobile-web-app-capable"
+        content="yes"
+    >
 
-    <!-- Mobile App -->
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-title" content="ROTIX" />
-    <meta name="mobile-web-app-capable" content="yes" />
+    <!-- =========================
+         OPEN GRAPH
+    ========================== -->
 
-    <!-- Performance -->
-    <link rel="preconnect" href="https://res.cloudinary.com" />
-    <link rel="dns-prefetch" href="https://res.cloudinary.com" />
-  </head>
+    <meta
+        property="og:type"
+        content="website"
+    >
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+    <meta
+        property="og:title"
+        content="ROTIX — Cyber-Fluid Pipeline Puzzle Game"
+    >
+
+    <meta
+        property="og:description"
+        content="Rotate. Connect. Synchronize. Master the matrix. Play ROTIX, a cyber-fluid pipeline puzzle game featuring 30 challenging levels and an intense pressure-driven gameplay system."
+    >
+
+    <meta
+        property="og:image"
+        content="https://res.cloudinary.com/paihc5qx/image/upload/v1786991414/logo_ba6vg2.png"
+    >
+
+    <meta
+        property="og:image:alt"
+        content="ROTIX Cyber-Fluid Pipeline Puzzle Game"
+    >
+
+    <meta
+        property="og:url"
+        content="https://rotixgame.com"
+    >
+
+    <meta
+        property="og:site_name"
+        content="ROTIX"
+    >
+
+    <meta
+        property="og:locale"
+        content="en_US"
+    >
+
+    <!-- =========================
+         TWITTER / X
+    ========================== -->
+
+    <meta
+        name="twitter:card"
+        content="summary_large_image"
+    >
+
+    <meta
+        name="twitter:title"
+        content="ROTIX — Cyber-Fluid Pipeline Puzzle Game"
+    >
+
+    <meta
+        name="twitter:description"
+        content="Challenge your mind, synchronize the energy streams, stabilize every matrix, and master all 30 levels in ROTIX."
+    >
+
+    <meta
+        name="twitter:image"
+        content="https://res.cloudinary.com/paihc5qx/image/upload/v1786991414/logo_ba6vg2.png"
+    >
+
+    <meta
+        name="twitter:image:alt"
+        content="ROTIX Game Logo"
+    >
+
+    <!-- =========================
+         PERFORMANCE
+    ========================== -->
+
+    <link
+        rel="preconnect"
+        href="https://res.cloudinary.com"
+    >
+
+    <link
+        rel="dns-prefetch"
+        href="https://res.cloudinary.com"
+    >
+
+    <!-- =========================
+         GAME ASSETS
+    ========================== -->
+
+    <link
+        rel="preload"
+        href="https://res.cloudinary.com/paihc5qx/image/upload/v1786991414/logo_ba6vg2.png"
+        as="image"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+<body>
+
+    <!-- =========================
+         SPLASH SCREEN
+    ========================== -->
+
+    <div id="splash-screen" class="splash-container">
+
+        <img
+            src="https://res.cloudinary.com/paihc5qx/image/upload/v1786991414/logo_ba6vg2.png"
+            class="splash-logo"
+            alt="ROTIX Logo"
+            draggable="false"
+        >
+
+        <div class="splash-loader">
+            <div class="loader-line"></div>
+        </div>
+
+        <div class="splash-caption">
+            Initializing Fluid Matrix
+        </div>
+
+    </div>
+
+    <!-- =========================
+         MODAL PORTAL
+    ========================== -->
+
+    <div id="modal-portal" class="modal-overlay" aria-live="assertive">
+
+        <!-- SUCCESS -->
+
+        <div
+            id="modal-success"
+            class="cyber-modal layout-success"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="success-modal-title"
+        >
+
+            <div class="modal-icon">
+                ✓
+            </div>
+
+            <h2 id="success-modal-title" class="modal-title">
+                SYSTEM STABILIZED
+            </h2>
+
+            <p class="modal-desc">
+                Dual-channel synchronization completed successfully.
+            </p>
+
+            <div class="modal-stat-grid">
+
+                <div class="modal-stat-row">
+                    <span class="ms-label">LEVEL</span>
+                    <span id="modal-level-val" class="ms-value">
+                        01
+                    </span>
+                </div>
+
+                <div class="modal-stat-row">
+                    <span class="ms-label">MOVES</span>
+                    <span id="modal-moves-val" class="ms-value">
+                        0
+                    </span>
+                </div>
+
+                <div class="modal-stat-row">
+                    <span class="ms-label">EFFICIENCY</span>
+                    <span id="modal-efficiency-val" class="ms-value">
+                        100%
+                    </span>
+                </div>
+
+            </div>
+
+            <button
+                id="btn-next-level"
+                class="modal-action-btn primary"
+                type="button"
+            >
+                NEXT MATRIX
+            </button>
+
+        </div>
+
+        <!-- FAILURE -->
+
+        <div
+            id="modal-failure"
+            class="cyber-modal layout-failure"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="failure-modal-title"
+        >
+
+            <div class="modal-icon">
+                ⚠
+            </div>
+
+            <h2 id="failure-modal-title" class="modal-title">
+                SYSTEM FAILURE
+            </h2>
+
+            <p class="modal-desc">
+                Pressure threshold exceeded before synchronization.
+            </p>
+
+            <div class="modal-stat-grid">
+
+                <div class="modal-stat-row">
+                    <span class="ms-label">LEVEL</span>
+                    <span id="failure-level-val" class="ms-value">
+                        01
+                    </span>
+                </div>
+
+                <div class="modal-stat-row">
+                    <span class="ms-label">MOVES</span>
+                    <span id="failure-moves-val" class="ms-value">
+                        0
+                    </span>
+                </div>
+
+            </div>
+
+            <button
+                id="btn-reboot"
+                class="modal-action-btn failure"
+                type="button"
+            >
+                REBOOT SYSTEM
+            </button>
+
+        </div>
+
+        <!-- CAMPAIGN COMPLETE -->
+
+        <div
+            id="modal-complete"
+            class="cyber-modal layout-success"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="complete-modal-title"
+        >
+
+            <div class="modal-icon">
+                ◎
+            </div>
+
+            <h2 id="complete-modal-title" class="modal-title">
+                CAMPAIGN COMPLETE
+            </h2>
+
+            <p class="modal-desc">
+                All 30 matrices stabilized successfully.
+            </p>
+
+            <div class="modal-stat-grid">
+
+                <div class="modal-stat-row">
+                    <span class="ms-label">TOTAL LEVELS</span>
+                    <span class="ms-value">
+                        30
+                    </span>
+                </div>
+
+                <div class="modal-stat-row">
+                    <span class="ms-label">STATUS</span>
+                    <span class="ms-value">
+                        COMPLETE
+                    </span>
+                </div>
+
+            </div>
+
+            <button
+                id="btn-restart-campaign"
+                class="modal-action-btn primary"
+                type="button"
+            >
+                RESTART CAMPAIGN
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- =========================
+         APPLICATION
+    ========================== -->
+
+    <div class="app-container">
+
+        <div class="status-bar-safe"></div>
+
+        <!-- =========================
+             HEADER
+        ========================== -->
+
+        <header class="app-header">
+
+            <div class="brand-zone">
+
+                <img
+                    src="https://res.cloudinary.com/paihc5qx/image/upload/v1786991414/logo_ba6vg2.png"
+                    id="rotix-logo"
+                    class="brand-logo"
+                    alt="ROTIX"
+                    draggable="false"
+                >
+
+            </div>
+
+            <div class="stats-zone">
+
+                <!-- LEVEL -->
+
+                <div class="stat-pill">
+
+                    <span class="label">
+                        LEVEL
+                    </span>
+
+                    <span
+                        id="level-display"
+                        class="value"
+                    >
+                        01
+                    </span>
+
+                </div>
+
+                <!-- MOVES -->
+
+                <div class="stat-pill">
+
+                    <span class="label">
+                        MOVES
+                    </span>
+
+                    <span
+                        id="moves-display"
+                        class="value"
+                    >
+                        0
+                    </span>
+
+                </div>
+
+                <!-- PRESSURE -->
+
+                <div
+                    class="stat-pill vital"
+                    id="pressure-pill"
+                >
+
+                    <span class="label">
+                        PRESSURE
+                    </span>
+
+                    <div class="progress-bar-track">
+
+                        <div
+                            id="pressure-bar"
+                            class="progress-bar-fill"
+                        ></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- =========================
+             MAIN VIEW
+        ========================== -->
+
+        <main class="app-view">
+
+            <!-- GAME SCREEN -->
+
+            <section
+                id="game-screen"
+                class="view-panel active"
+                role="tabpanel"
+                aria-labelledby="matrix-tab"
+            >
+
+                <div class="matrix-shell">
+
+                    <div class="matrix-topbar">
+
+                        <div class="matrix-difficulty">
+                            <span id="difficulty-display">
+                                EASY SECTOR
+                            </span>
+                        </div>
+
+                        <div class="matrix-objective">
+                            Synchronize both energy streams
+                        </div>
+
+                    </div>
+
+                    <div
+                        id="matrix-card"
+                        class="matrix-wrapper"
+                    >
+
+                        <div
+                            id="pipeline-matrix"
+                            class="matrix-grid"
+                            aria-label="Pipeline matrix"
+                        ></div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- BLUEPRINT SCREEN -->
+
+            <section
+                id="blueprint-screen"
+                class="view-panel"
+                role="tabpanel"
+                aria-labelledby="protocol-tab"
+            >
+
+                <div class="blueprint-card">
+
+                    <h3>
+                        SYSTEM PROTOCOLS
+                    </h3>
+
+                    <p>
+                        Rotate pipeline nodes to establish a complete
+                        synchronized connection between both source
+                        streams and the golden reactor sink.
+                    </p>
+
+                    <div class="color-guide">
+
+                        <div class="guide-item">
+                            <div class="node-dot cyan"></div>
+                            <span>Cyan Stream Source</span>
+                        </div>
+
+                        <div class="guide-item">
+                            <div class="node-dot magenta"></div>
+                            <span>Magenta Stream Source</span>
+                        </div>
+
+                        <div class="guide-item">
+                            <div class="node-dot gold"></div>
+                            <span>Golden Reactor Sink</span>
+                        </div>
+
+                    </div>
+
+                    <div class="protocol-divider"></div>
+
+                    <div class="protocol-list">
+
+                        <div class="protocol-item">
+                            Pressure increases continuously over time.
+                        </div>
+
+                        <div class="protocol-item">
+                            Advanced sectors contain multi-path decoys.
+                        </div>
+
+                        <div class="protocol-item">
+                            Cheat mode unlocks diagnostic tools.
+                        </div>
+
+                        <div class="protocol-item">
+                            Efficient solutions produce higher ratings.
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+        <!-- =========================
+             TAB BAR
+        ========================== -->
+
+        <nav class="tab-bar" aria-label="Application views" role="tablist">
+
+            <button
+                class="tab-item active"
+                data-target="game-screen"
+                type="button"
+                id="matrix-tab"
+                role="tab"
+                aria-controls="game-screen"
+                aria-selected="true"
+            >
+
+                <svg
+                    class="tab-icon"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                >
+                    <path d="M12 2L2 12h3v8h6v-6h2v6h6v-8h3L12 2z"/>
+                </svg>
+
+                <span class="tab-label">
+                    Matrix
+                </span>
+
+            </button>
+
+            <button
+                class="tab-item"
+                data-target="blueprint-screen"
+                type="button"
+                id="protocol-tab"
+                role="tab"
+                aria-controls="blueprint-screen"
+                aria-selected="false"
+            >
+
+                <svg
+                    class="tab-icon"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                >
+                    <path d="M12 3H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V9l-6-6zm0 1.5L19.5 9H14V4.5zM4 5h8v5h6v9H4V5z"/>
+                </svg>
+
+                <span class="tab-label">
+                    Protocol
+                </span>
+
+            </button>
+
+        </nav>
+
+        <div class="home-indicator-safe"></div>
+
+    </div>
+
+    <!-- =========================
+         SCRIPTS
+    ========================== -->
+
+    <script type="module" src="js/app.js"></script>
+
+</body>
 </html>
